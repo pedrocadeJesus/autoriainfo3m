@@ -1,0 +1,10 @@
+.bg-amalero{
+    background-color: yellow;
+}
+.bg-vermelho{
+    background-color: red;
+}
+.container{
+    display: flex;
+    justify-content: space-around; 
+}
