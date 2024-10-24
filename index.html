@@ -1,26 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha galeria de fotos</title>
-    <link rel="stylesheet" href="Galeria.css"
+    <title>Pseudoclasse</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <h1>Minha galeria</h1>
-        <div class="galeria">
-            <img src="https://img.ibxk.com.br/2021/06/18/18100843784041.jpg?ims=fit-in/220x220/filters:fill(ffffff)" alt="imagem 1">
-            <img src="https://img.ibxk.com.br/2021/06/18/18102117480052.jpg?ims=fit-in/220x220/filters:fill(ffffff)" alt="imagem 2">
-            <img src="https://img.ibxk.com.br/2021/06/18/18105137765062.jpg?ims=fit-in/220x220/filters:fill(ffffff)" alt="imagem 3">
-            <img src="https://img.ibxk.com.br/2021/06/18/18105406061065.jpg?ims=fit-in/220x220/filters:fill(ffffff)" alt="imagem 4">
-            <img src="https://img.ibxk.com.br/2021/06/18/18110011575069.jpg?ims=fit-in/220x220/filters:fill(ffffff)" alt="imagem 5">
-            <img src="https://img.ibxk.com.br/2021/01/07/07113250196056.jpg?ims=fit-in/220x220/filters:fill(ffffff)" alt="imagem 6">
-            <img src="https://img.ibxk.com.br/2021/06/18/18112556337095.jpg?ims=fit-in/220x220/filters:fill(ffffff)" alt="imagem 7">
-            <img src="https://img.ibxk.com.br/2021/06/18/18105253171064.jpg?ims=fit-in/220x220/filters:fill(ffffff)" alt="imagem 8">
-            <img src="https://img.ibxk.com.br/2021/06/18/18111607547085.jpg?ims=fit-in/220x220/filters:fill(ffffff)" alt="imagem 9">
-            <br><br>
+    <header>
+        <nav>
+            <ul>
+                <a href="#formulários">ir para formulários</a><br>
+                <a href="#Galeria de fotos">ir para galeria de fotos</a><br>
+                <a href="#Saiba mais">ir para o botão "saiba mais"</a><br>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <h2 id="formulários"></h2>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome">
+        <label for="e-mail">e-mail:</label>
+        <input type="text" id="e-mail">
+        <input type="checkbox" value="clique">
+        <label for="checkbox">Deseja receber atualizações via e-mail?</label>
+        <input type="submit" value="enviar">
+        <button type="submit" disabled> enviar</button>
+        <h2 id="Galeria de fotos"></h2>
+        <ul class="galeria">
+            <img src="https://img.ibxk.com.br/2021/06/18/18100843784041.jpg?ims=fit-in/220x220/filters:fill(ffffff)"
+                alt="imagem 1">
+            <img src="https://img.ibxk.com.br/2021/06/18/18102117480052.jpg?ims=fit-in/220x220/filters:fill(ffffff)"
+                alt="imagem 2">
+            <img src="https://img.ibxk.com.br/2021/06/18/18105137765062.jpg?ims=fit-in/220x220/filters:fill(ffffff)"
+                alt="imagem 3">
+            <img src="https://img.ibxk.com.br/2021/06/18/18105406061065.jpg?ims=fit-in/220x220/filters:fill(ffffff)"
+                alt="imagem 4">
+        </ul>
+        <div>
+            <p class="important">
+                É aqui onde estão os formulários da página
+            </p>
+            <p class="important">
+               Aqui esta a galeria de fotos do site
+            </p>
+            <p class="important">
+                Aqui esta o botão "saiba mais"
+            </p>
         </div>
-    </div>
+    </form>
+    <h2 id="Saiba mais"></h2>
+    <form action="http://google.com">
+        <input type="submit" value="saiba mais">
+    </form>
+    <p class="important">Este parágrafo é importante</p>
+    <p>Este parágrafo não é importante</p>
 </body>
+
 </html>
